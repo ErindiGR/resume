@@ -50,6 +50,8 @@ function setup() {
 
 		obs[i]=[d,getRandomInt(1000)];
 
+		if(navigator.userAgent.match(/iPhone/i))
+			d.style.zIndex = -10000;
 		
 	}
 
