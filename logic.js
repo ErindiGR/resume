@@ -44,8 +44,6 @@ function setup() {
 		d.style.backgroundImage = "url(sin.png)";
 		d.style.backgroundSize = "600px 100%";
 		d.style.filter="drop-shadow(-5px -5px 5px grey)";
-		
-		;
 
 		if(i >= NUM-2)
 			d.style.zIndex = 100000;
