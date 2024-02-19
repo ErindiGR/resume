@@ -1,6 +1,4 @@
-
-if(!(navigator.userAgent.match(/iPhone/i)))
-	setTimeout(setup, 1000)
+setTimeout(setup, 1000)
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
