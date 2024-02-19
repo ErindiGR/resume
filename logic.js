@@ -32,14 +32,14 @@ function setup() {
 		d.style.position="fixed";
 		
 		if(i < 4)
-			d.style.top = (sh/2)+((sh/2)/(NUM)) * (i) + sh * 0.1
+			d.style.top = (sh/2)+((sh/2)/(NUM)) * (i) + sh * 0.1 +"px";
 		else
-			d.style.top = (sh/2)+((sh/2)/(NUM)) * (i);
+			d.style.top = (sh/2)+((sh/2)/(NUM)) * (i) +"px";
 
-		d.style.left = -50;
+		d.style.left = -50+"px";
 		d.style.backgroundPosition = getRandomInt(sw) + "px 0px";
 		d.style.width =  "200%";
-		d.style.height =  (sh/(NUM));
+		d.style.height =  (sh/(NUM)) +"px";
 		d.style.backgroundRepeat= "repeat no-repeat";
 		d.style.backgroundImage = "url(sin.png)";
 		d.style.backgroundSize = "600px 100%";
