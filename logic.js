@@ -36,7 +36,7 @@ function setup() {
 		else
 			d.style.top = (sh/2)+((sh/2)/(NUM)) * (i) +"px";
 
-		d.style.left = -50+"px";
+		d.style.right = "50px";
 		d.style.backgroundPosition = getRandomInt(sw) + "px 0px";
 		d.style.width =  "200%";
 		d.style.height =  (sh/(NUM)) +"px";
