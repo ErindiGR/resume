@@ -1,5 +1,5 @@
 
-setTimeout(foo, 1000)
+setTimeout(setup, 1000)
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -9,7 +9,7 @@ const NUM = 10;
 
 var obs=[];
 
-function foo() {
+function setup() {
 	let proc = document.getElementsByClassName("proc")[0];
 
 	let d = document.createElement("div");
@@ -55,18 +55,18 @@ function foo() {
 		
 	}
 
-	setTimeout(move,50);
+	setTimeout(anim,50);
 	//window.requestAnimationFrame(move);
 }
 
-function move(){
+function anim(){
 	for(i=0;i<NUM;i++)
 	{
 		obs[i][1] += (3.0/(i+1));
 		obs[i][0].style.backgroundPosition =  obs[i][1]+ "px 0px";
 	}
 
-	setTimeout(move, 33);
+	setTimeout(anim, 33);
 
 	//window.requestAnimationFrame(move);
 }
