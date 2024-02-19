@@ -22,8 +22,8 @@ function setup() {
 	d.style.backgroundColor = "rgb(100,100,255)";
 	proc.appendChild(d);
 
-	sw = document.documentElement.clientWidth;
-	sh = document.documentElement.clientHeight;
+	let sw = document.documentElement.clientWidth;
+	let sh = document.documentElement.clientHeight;
 
 	for(i=0;i<NUM;i++)
 	{
