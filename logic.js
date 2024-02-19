@@ -36,10 +36,10 @@ function setup() {
 		else
 			d.style.top = (sh/2)+((sh/2)/(NUM)) * (i) +"px";
 
-		d.style.right = "50px";
+		d.style.left = "-50px";
 		d.style.backgroundPosition = getRandomInt(sw) + "px 0px";
 		d.style.width =  "200%";
-		d.style.height =  (sh/(NUM)) +"px";
+		d.style.height =  (sh/(NUM)) + "px";
 		d.style.backgroundRepeat= "repeat no-repeat";
 		d.style.backgroundImage = "url(sin.png)";
 		d.style.backgroundSize = "600px 100%";
@@ -54,17 +54,27 @@ function setup() {
 	}
 
 	setTimeout(anim,50);
-	//window.requestAnimationFrame(move);
 }
 
 function anim(){
+
+	let sw = document.documentElement.clientWidth;
+	let sh = document.documentElement.clientHeight;
+
 	for(i=0;i<NUM;i++)
 	{
 		obs[i][1] += (3.0/(i+1));
 		obs[i][0].style.backgroundPosition =  obs[i][1]+ "px 0px";
+
+
+		if(i < 4)
+			obs[i][0].style.top = (sh/2)+((sh/2)/(NUM)) * (i) + sh * 0.1 +"px";
+		else
+			obs[i][0].style.top = (sh/2)+((sh/2)/(NUM)) * (i) +"px";
+
+		obs[i][0].style.height =  (sh/(NUM)) + "px";
 	}
 
-	setTimeout(anim, 33);
 
-	//window.requestAnimationFrame(move);
+	setTimeout(anim, 33);
 }
