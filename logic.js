@@ -23,7 +23,7 @@ function setup() {
 	proc.appendChild(d);
 
 	let sw = document.documentElement.clientWidth;
-	let sh = Math.min(document.documentElement.clientHeight,window.screenHeight);
+	let sh = document.documentElement.clientHeight;
 
 	for(i=0;i<NUM;i++)
 	{
