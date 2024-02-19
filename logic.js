@@ -1,5 +1,6 @@
 
-setTimeout(setup, 1000)
+if(!navigator.userAgent.match(/iPhone/i))
+	setTimeout(setup, 1000)
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -49,9 +50,6 @@ function setup() {
 			d.style.zIndex = 100000;
 
 		obs[i]=[d,getRandomInt(1000)];
-
-		if(navigator.userAgent.match(/iPhone/i))
-			d.style.zIndex = -10000;
 		
 	}
 
