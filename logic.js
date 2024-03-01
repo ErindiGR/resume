@@ -1,5 +1,7 @@
 setTimeout(setup, 1000)
 
+isMobile = (window.screen.height > window.screen.width);
+
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
@@ -24,6 +26,9 @@ function setup() {
 	let sw = document.documentElement.clientWidth;
 	let sh = document.documentElement.clientHeight;
 
+	if(isMobile)
+		return;
+	
 	for(i=0;i<NUM;i++)
 	{
 		d = document.createElement("div");
