@@ -21,6 +21,7 @@ function setup() {
 	d.style.height =  "10em";
 	d.style.borderRadius="50%";
 	d.style.backgroundColor = "rgb(100,100,255)";
+	d.style.zIndex = 0;
 	proc.appendChild(d);
 
 	let sw = document.documentElement.clientWidth;
