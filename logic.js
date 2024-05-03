@@ -32,7 +32,7 @@ function setup() {
 	if(isMobile)
 		return;
 	
-	for(i=0;i<NUM;i++)
+	for(let i=0;i<NUM;i++)
 	{
 		d = document.createElement("div");
 		proc.appendChild(d);
@@ -67,7 +67,7 @@ function anim(){
 	let sw = document.documentElement.clientWidth;
 	let sh = document.documentElement.clientHeight;
 
-	for(i=0;i<NUM;i++)
+	for(let i=0;i<NUM;i++)
 	{
 		obs[i][1] += (3.0/(i+1));
 		obs[i][0].style.backgroundPosition =  obs[i][1]+ "px 0px";
