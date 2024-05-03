@@ -2,7 +2,7 @@
 
 setTimeout(setup, 1000)
 
-isMobile = (window.screen.height > window.screen.width);
+var isMobile = (window.screen.height > window.screen.width);
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
