@@ -1,3 +1,5 @@
+"use strict";
+
 setTimeout(setup, 1000)
 
 isMobile = (window.screen.height > window.screen.width);
